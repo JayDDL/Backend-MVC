@@ -26,8 +26,14 @@ function getEventsByLocation(req, res) {
   res.json(events);
 }
 
+// Retrieve all events
+function getAllEvents(req, res) {
+  const events = eventModel.getAllEvents();
+  res.json(events);
+}
 module.exports = {
   addEvent,
   getEventsByDate,
-  getEventsByLocation
+  getEventsByLocation,
+  getAllEvents
 };

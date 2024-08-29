@@ -5,5 +5,6 @@ const eventController = require('../controllers/eventController');
 router.post('/events', eventController.addEvent);
 router.get('/events/date/:date', eventController.getEventsByDate);
 router.get('/events/location/:location', eventController.getEventsByLocation);
+router.get('/events', eventController.getAllEvents);
 
 module.exports = router;

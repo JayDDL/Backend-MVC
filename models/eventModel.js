@@ -15,8 +15,14 @@ function getEventsByLocation(location) {
   return events.filter(event => event.location.toLowerCase() === location.toLowerCase());
 }
 
+// Get all events
+function getAllEvents() {
+  return events;
+}
+
 module.exports = {
   addEvent,
   getEventsByDate,
-  getEventsByLocation
+  getEventsByLocation,
+  getAllEvents
 };
