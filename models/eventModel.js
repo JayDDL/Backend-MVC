@@ -1,3 +1,4 @@
+// If enough time, build Database (Sequelize, Mongoose, etc)
 const events = [];
 
 // Add an event

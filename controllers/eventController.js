@@ -1,8 +1,11 @@
 const eventModel = require('../models/eventModel');
 
+// Add try catch block to handle errors
+
 // Add an event
 function addEvent(req, res) {
   const { name, location, date } = req.body;
+  // Control flow to check that all mandatory attributes are present in the body
   if (!name || !location || !date) {
     return res.status(400).send('All fields are required');
   }
